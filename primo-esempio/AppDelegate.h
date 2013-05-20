@@ -16,4 +16,7 @@
 
 @property (strong, nonatomic) ViewController *viewController;
 
+/*aggiungiamo la proprietà del navigation controller */
+@property (strong, nonatomic) UINavigationController *navControl;
+
 @end
