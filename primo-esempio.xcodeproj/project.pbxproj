@@ -23,6 +23,8 @@
 		ACDC56B8174A30490080A83A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDC5693174A30490080A83A /* Foundation.framework */; };
 		ACDC56C0174A30490080A83A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACDC56BE174A30490080A83A /* InfoPlist.strings */; };
 		ACDC56C3174A30490080A83A /* primo_esempioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDC56C2174A30490080A83A /* primo_esempioTests.m */; };
+		ACDC56CF174A66D00080A83A /* ViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDC56CD174A66D00080A83A /* ViewTableViewController.m */; };
+		ACDC56D0174A66D00080A83A /* ViewTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACDC56CE174A66D00080A83A /* ViewTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		ACDC56BF174A30490080A83A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ACDC56C1174A30490080A83A /* primo_esempioTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = primo_esempioTests.h; sourceTree = "<group>"; };
 		ACDC56C2174A30490080A83A /* primo_esempioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = primo_esempioTests.m; sourceTree = "<group>"; };
+		ACDC56CC174A66D00080A83A /* ViewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewTableViewController.h; sourceTree = "<group>"; };
+		ACDC56CD174A66D00080A83A /* ViewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewTableViewController.m; sourceTree = "<group>"; };
+		ACDC56CE174A66D00080A83A /* ViewTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +126,9 @@
 				ACDC56A1174A30490080A83A /* AppDelegate.m */,
 				ACDC56A9174A30490080A83A /* ViewController.h */,
 				ACDC56AA174A30490080A83A /* ViewController.m */,
+				ACDC56CC174A66D00080A83A /* ViewTableViewController.h */,
+				ACDC56CD174A66D00080A83A /* ViewTableViewController.m */,
+				ACDC56CE174A66D00080A83A /* ViewTableViewController.xib */,
 				ACDC56AC174A30490080A83A /* ViewController.xib */,
 				ACDC5698174A30490080A83A /* Supporting Files */,
 			);
@@ -236,6 +244,7 @@
 				ACDC56A6174A30490080A83A /* Default@2x.png in Resources */,
 				ACDC56A8174A30490080A83A /* Default-568h@2x.png in Resources */,
 				ACDC56AE174A30490080A83A /* ViewController.xib in Resources */,
+				ACDC56D0174A66D00080A83A /* ViewTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +282,7 @@
 				ACDC569E174A30490080A83A /* main.m in Sources */,
 				ACDC56A2174A30490080A83A /* AppDelegate.m in Sources */,
 				ACDC56AB174A30490080A83A /* ViewController.m in Sources */,
+				ACDC56CF174A66D00080A83A /* ViewTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
