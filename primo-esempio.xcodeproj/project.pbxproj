@@ -463,6 +463,7 @@
 				ACDC56C8174A30490080A83A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACDC56C9174A30490080A83A /* Build configuration list for PBXNativeTarget "primo-esempioTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +472,7 @@
 				ACDC56CB174A30490080A83A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
