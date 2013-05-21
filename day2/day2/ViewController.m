@@ -47,7 +47,7 @@
     [arrayTable addObject: [[Corso alloc] popolate:@"test2" andidCorso:2 anddurata:@"1h"]];
     [arrayTable addObject: [[Corso alloc] popolate:@"test3" andidCorso:3 anddurata:@"3h"]];
     [arrayTable addObject: [[Corso alloc] popolate:@"test4" andidCorso:4 anddurata:@"55min"]];
-    
+       
     /*scatena l'evento di ricaricamento dei dati dal source*/
     [tableView reloadData];
     
@@ -75,8 +75,9 @@
         //setta lo stile con cui vengono selezionate le righe
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
-    //inseriamo nella cello l'elemento della lista corrispondente
-    cell.textLabel.text = [arrayTable objectAtIndex:indexPath.row];
+    //inseriamo nella cella l'elemento della lista corrispondente
+    Corso *corso = [arrayTable objectAtIndex:indexPath.row];
+    cell.textLabel.text = corso.titolo;
     return cell;
 }
 
