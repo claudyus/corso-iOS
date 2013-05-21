@@ -15,3 +15,9 @@ npm WARN package.json corso-iOS@0.0.1 No readme data.
 
 Express server listening on port 3000
 ```
+
+### Dependencies
+
+  * [EasyXML github project][easyxml], read the documentation
+
+  [easyxml]: https://github.com/QuickenLoans/node-easyxml

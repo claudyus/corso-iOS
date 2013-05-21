@@ -4,11 +4,13 @@
  */
 
 var express = require('express')
-  , courses = require('./courses')
   , http = require('http')
   , path = require('path');
 
 var app = express();
+
+// Pollute global with app :)
+global.app = app;
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -29,8 +31,8 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/api/course', courses.getcourse);
-app.post('/api/course', courses.postcourse);
+// Include all the routes in one command.
+require('./courses');
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
