@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Corso.h"
 
 @interface ViewController : UIViewController {
     /* outlet, binding tra elemento grafico e codice */
