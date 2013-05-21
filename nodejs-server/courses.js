@@ -8,14 +8,16 @@ var util = require('util')
   // EasyXML external library
   , easyxml = require('easyxml')
   // utility function
-  , log = function (args) { console.log(util.inspect(args, { colors: true })); };
+  , log = function (args) { console.log(util.inspect(args, { colors: true })); }
+  , randomobj = [];
 
 // col3-style routes
-app.get('/api/course', function (req, res, next) {
-  var randomobj = { key: '9172nsaj2781nansh7', id: 9};
+app.get('/list/course', function (req, res, next) {
   res.send(easyxml.render(randomobj));
 });
 
-app.post('/api/course', function (req, res, next) {
-  res.send(200);
+app.get('/add/course', function (req, res, next) {
+	log(req);
+	randomobj.push({idCordso: 0, titolo: "dfff", durata: "aaaa"});
+
 });
