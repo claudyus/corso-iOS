@@ -10,4 +10,14 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) NSMutableArray *arrayTable;
+
+
+/* modello */
+
+@property (nonatomic, strong) NSString *titolo;
+@property (nonatomic) NSInteger *idCorso;
+@property (nonatomic) NSString *durata;
+
+
 @end
