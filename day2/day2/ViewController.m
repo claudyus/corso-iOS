@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Corso.h"
+#import "CustomCell.h"
 
 @interface ViewController ()
 
@@ -68,16 +69,20 @@
 // Setta il contenuto delle varie celle
 - (UITableViewCell *)tableView:(UITableView *)TableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell *cell = [TableView dequeueReusableCellWithIdentifier:@"cellID"];
+    CustomCell *cell = [TableView dequeueReusableCellWithIdentifier:@"CustomCell"];
     
     if (cell == nil){
-        cell = [[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"cellID"] ;
+        cell = [CustomCell getCell: [arrayTable objectAtIndex:indexPath.row]];
+                 //] initWithFrame:CGRectZero reuseIdentifier:@"CustomCell"] ;
         //setta lo stile con cui vengono selezionate le righe
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     //inseriamo nella cella l'elemento della lista corrispondente
     Corso *corso = [arrayTable objectAtIndex:indexPath.row];
-    cell.textLabel.text = corso.titolo;
+    cell.titolo.text = corso.titolo;
+    cell.durata.text = corso.durata;
+    cell.idCorso.text = @"%d", corso.idCorso;
+
     return cell;
 }
 
