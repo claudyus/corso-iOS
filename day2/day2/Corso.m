@@ -19,13 +19,15 @@
     return  self;
 }
 
--(Corso*) popolate: (NSString*) Titolo andidCorso: (int) IdCorso anddurata: (NSString*) Durata {
+-(Corso*) popolate: (NSString*) Titolo andidCorso: (int) IdCorso anddurata: (NSString*) Durata andimmagine: (UIImage*) Immagine andattivo: (Boolean) Attivo {
     
     Corso *newCorso = [[Corso alloc] init];
     
     newCorso.titolo = Titolo;
     newCorso.idCorso = IdCorso;
     newCorso.durata = Durata;
+    newCorso.immagine = Immagine;
+    newCorso.attivo = Attivo;
     
     return newCorso;
 }

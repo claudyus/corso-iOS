@@ -18,9 +18,11 @@
     @property (nonatomic, strong) NSString *titolo;
     @property (nonatomic, assign) int idCorso;
     @property (nonatomic) NSString *durata;
+    @property (nonatomic) UIImage *immagine;
+    @property (nonatomic) Boolean attivo;
 
 
-    -(Corso*) popolate: (NSString*) titolo andidCorso: (int) idCorso anddurata: (NSString*) durata;
+    -(Corso*) popolate: (NSString*) Titolo andidCorso: (int) IdCorso anddurata: (NSString*) Durata andimmagine: (UIImage*) Immagine andattivo: (Boolean) Attivo;
 @end
 
 #endif
