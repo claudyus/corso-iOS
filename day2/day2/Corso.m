@@ -19,7 +19,7 @@
     return  self;
 }
 
--(Corso*) popolate: (NSString*) titolo andidCorso: (NSInteger*) idCorso anddurata: (NSString*) durata {
+-(Corso*) popolate: (NSString*) titolo andidCorso: (int) idCorso anddurata: (NSString*) durata {
     
     Corso *newCorso = [[Corso alloc] init];
     

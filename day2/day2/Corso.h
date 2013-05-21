@@ -16,8 +16,11 @@
 
     /*proprietà ! */
     @property (nonatomic, strong) NSString *titolo;
-    @property (nonatomic) NSInteger *idCorso;
+    @property (nonatomic, assign) int idCorso;
     @property (nonatomic) NSString *durata;
+
+
+    -(Corso*) popolate: (NSString*) titolo andidCorso: (int) idCorso anddurata: (NSString*) durata;
 @end
 
 #endif

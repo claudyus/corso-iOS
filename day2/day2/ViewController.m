@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Corso.h"
 
 @interface ViewController ()
 
@@ -24,8 +25,6 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     arrayTable = [[NSMutableArray alloc] initWithCapacity:0];
-    [arrayTable addObject:(@"primo")];
-    [arrayTable addObject:(@"secondo")];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,8 +40,17 @@
     /* uso del log */
     NSLog(@"premuto il bottone");
 
-    UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"You should not pass!!" message:@"Error" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
-    [alertView show];}
+    UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"You should not pass!!" message:@"La tabella sta per essere popolata!" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+    [alertView show];
+
+    [arrayTable addObject: [[Corso alloc] popolate:@"test" andidCorso:1 anddurata:@"120min"]];
+    [arrayTable addObject: [[Corso alloc] popolate:@"test2" andidCorso:2 anddurata:@"1h"]];
+    [arrayTable addObject: [[Corso alloc] popolate:@"test3" andidCorso:3 anddurata:@"3h"]];
+    [arrayTable addObject: [[Corso alloc] popolate:@"test4" andidCorso:4 anddurata:@"55min"]];
+    
+    
+    
+}
 
 
 #pragma callback della tabella
