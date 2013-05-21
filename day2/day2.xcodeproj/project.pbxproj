@@ -23,6 +23,7 @@
 		AC051728174B6BFD0095C6D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC051703174B6BFD0095C6D8 /* Foundation.framework */; };
 		AC051730174B6BFD0095C6D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC05172E174B6BFD0095C6D8 /* InfoPlist.strings */; };
 		AC051733174B6BFD0095C6D8 /* day2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC051732174B6BFD0095C6D8 /* day2Tests.m */; };
+		AC05173E174BA2AC0095C6D8 /* Corso.m in Sources */ = {isa = PBXBuildFile; fileRef = AC05173D174BA2AC0095C6D8 /* Corso.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		AC05172F174B6BFD0095C6D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AC051731174B6BFD0095C6D8 /* day2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = day2Tests.h; sourceTree = "<group>"; };
 		AC051732174B6BFD0095C6D8 /* day2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = day2Tests.m; sourceTree = "<group>"; };
+		AC05173C174BA25C0095C6D8 /* Corso.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Corso.h; sourceTree = "<group>"; };
+		AC05173D174BA2AC0095C6D8 /* Corso.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Corso.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				AC051710174B6BFD0095C6D8 /* AppDelegate.h */,
 				AC051711174B6BFD0095C6D8 /* AppDelegate.m */,
 				AC051719174B6BFD0095C6D8 /* ViewController.h */,
+				AC05173C174BA25C0095C6D8 /* Corso.h */,
+				AC05173D174BA2AC0095C6D8 /* Corso.m */,
 				AC05171A174B6BFD0095C6D8 /* ViewController.m */,
 				AC05171C174B6BFD0095C6D8 /* ViewController.xib */,
 				AC051708174B6BFD0095C6D8 /* Supporting Files */,
@@ -273,6 +278,7 @@
 				AC05170E174B6BFD0095C6D8 /* main.m in Sources */,
 				AC051712174B6BFD0095C6D8 /* AppDelegate.m in Sources */,
 				AC05171B174B6BFD0095C6D8 /* ViewController.m in Sources */,
+				AC05173E174BA2AC0095C6D8 /* Corso.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
