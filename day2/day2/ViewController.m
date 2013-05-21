@@ -23,6 +23,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    arrayTable = [[NSMutableArray alloc] initWithCapacity:0];
+    [arrayTable addObject:(@"primo")];
+    [arrayTable addObject:(@"secondo")];
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,5 +60,11 @@
     //inseriamo nella cello l'elemento della lista corrispondente
     cell.textLabel.text = [arrayTable objectAtIndex:indexPath.row];
     return cell;
+}
+
+/*delegate della selezione */
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    /* stampa la linea selezionata*/
+    NSLog(@"selezionato %d", indexPath.row);
 }
 @end

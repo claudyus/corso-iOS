@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    /* outlet, binding tra elemento grafico e codice */
+    IBOutlet UITableView *tableView;
+    
+}
 
 @property (nonatomic, strong) NSMutableArray *arrayTable;
 
