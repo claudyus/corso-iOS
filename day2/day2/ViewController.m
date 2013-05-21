@@ -81,7 +81,7 @@
     Corso *corso = [arrayTable objectAtIndex:indexPath.row];
     cell.titolo.text = corso.titolo;
     cell.durata.text = corso.durata;
-    cell.idCorso.text = @"%d", corso.idCorso;
+    cell.idCorso.text = [NSString stringWithFormat: @"id: %d", corso.idCorso ];
 
     return cell;
 }
