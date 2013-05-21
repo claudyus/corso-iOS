@@ -28,7 +28,7 @@
 
 + (id) getCell: (Corso*) corso {
     /* */
-    CustomCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"CustomCell" owner:self options:nil ] objectAtIndex:0]
+    CustomCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"CustomCell" owner:self options:nil ] objectAtIndex:0];
 
     return cell;
 }
