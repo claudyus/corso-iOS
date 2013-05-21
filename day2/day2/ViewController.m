@@ -46,8 +46,8 @@
 
     [arrayTable addObject: [[Corso alloc] popolate:@"test" andidCorso:1 anddurata:@"120min" andimmagine: [UIImage imageNamed:@"course.gif"] andattivo:YES]];
     [arrayTable addObject: [[Corso alloc] popolate:@"test2" andidCorso:2 anddurata:@"1h" andimmagine: [UIImage imageNamed:@"course.gif"] andattivo:YES]];
-    [arrayTable addObject: [[Corso alloc] popolate:@"test3" andidCorso:3 anddurata:@"3h" andimmagine: [UIImage imageNamed:@"course.gif"] andattivo:YES]];
-    [arrayTable addObject: [[Corso alloc] popolate:@"test4" andidCorso:4 anddurata:@"55min" andimmagine: [UIImage imageNamed:@"course.gif"] andattivo:YES]];
+    [arrayTable addObject: [[Corso alloc] popolate:@"test3" andidCorso:3 anddurata:@"3h" andimmagine: [UIImage imageNamed:@"course.gif"] andattivo:NO]];
+    [arrayTable addObject: [[Corso alloc] popolate:@"test4" andidCorso:4 anddurata:@"55min" andimmagine: [UIImage imageNamed:@"course.gif"] andattivo:NO]];
        
     /*scatena l'evento di ricaricamento dei dati dal source*/
     [tableView reloadData];
@@ -82,6 +82,8 @@
     cell.titolo.text = corso.titolo;
     cell.durata.text = corso.durata;
     cell.idCorso.text = [NSString stringWithFormat: @"id: %d", corso.idCorso ];
+    cell.immagine.image = corso.immagine;
+    cell.attivo.on = corso.attivo;
 
     return cell;
 }

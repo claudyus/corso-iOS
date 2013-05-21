@@ -15,8 +15,10 @@
 
     + (id) getCell: (Corso*) corso;
 
-    @property (nonatomic, retain ) IBOutlet UILabel *titolo;
-    @property (nonatomic, retain ) IBOutlet UILabel *idCorso;
-    @property (nonatomic, retain ) IBOutlet UILabel *durata;
+    @property (nonatomic, retain) IBOutlet UILabel *titolo;
+    @property (nonatomic, retain) IBOutlet UILabel *idCorso;
+    @property (nonatomic, retain) IBOutlet UILabel *durata;
+    @property (nonatomic, retain) IBOutlet UIImageView *immagine;
+    @property (nonatomic, retain) IBOutlet UISwitch *attivo;
 
 @end

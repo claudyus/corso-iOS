@@ -14,7 +14,11 @@ Proj uploaded by [@claudyus], and thankfully [leeched] by [@mrgamer]
   * iOS Applications Advanced Features:
     * [Multiple views and Navigation Stack][navigation]
     * GridView(s)
-  * 
+
+### Requirements
+
+  * [Git for OSX][git], seleziona la versione appropriata (la prima di solito!)
+  * [NodeJS for OSX][nodejs]
 
 
 #### Links
@@ -25,3 +29,5 @@ Proj uploaded by [@claudyus], and thankfully [leeched] by [@mrgamer]
   [@mrgamer]: https://github.com/mrgamer
   [objectivec]: http://developer.apple.com/library/ios/#referencelibrary/GettingStarted/Learning_Objective-C_A_Primer/
   [navigation]: http://developer.apple.com/library/ios/#documentation/WindowsViews/Conceptual/ViewControllerCatalog/Chapters/NavigationControllers.html
+  [git]: https://code.google.com/p/git-osx-installer/downloads/list
+  [nodejs]: http://nodejs.org/
