@@ -24,6 +24,8 @@
 		AC051730174B6BFD0095C6D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC05172E174B6BFD0095C6D8 /* InfoPlist.strings */; };
 		AC051733174B6BFD0095C6D8 /* day2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC051732174B6BFD0095C6D8 /* day2Tests.m */; };
 		AC05173E174BA2AC0095C6D8 /* Corso.m in Sources */ = {isa = PBXBuildFile; fileRef = AC05173D174BA2AC0095C6D8 /* Corso.m */; };
+		AC051741174BB0820095C6D8 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC051740174BB0820095C6D8 /* CustomCell.m */; };
+		AC051743174BB4430095C6D8 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC051742174BB4430095C6D8 /* CustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,9 @@
 		AC051732174B6BFD0095C6D8 /* day2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = day2Tests.m; sourceTree = "<group>"; };
 		AC05173C174BA25C0095C6D8 /* Corso.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Corso.h; sourceTree = "<group>"; };
 		AC05173D174BA2AC0095C6D8 /* Corso.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Corso.m; sourceTree = "<group>"; };
+		AC05173F174BB0820095C6D8 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		AC051740174BB0820095C6D8 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		AC051742174BB4430095C6D8 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +131,9 @@
 				AC05173C174BA25C0095C6D8 /* Corso.h */,
 				AC05173D174BA2AC0095C6D8 /* Corso.m */,
 				AC05171A174B6BFD0095C6D8 /* ViewController.m */,
+				AC05173F174BB0820095C6D8 /* CustomCell.h */,
+				AC051740174BB0820095C6D8 /* CustomCell.m */,
+				AC051742174BB4430095C6D8 /* CustomCell.xib */,
 				AC05171C174B6BFD0095C6D8 /* ViewController.xib */,
 				AC051708174B6BFD0095C6D8 /* Supporting Files */,
 			);
@@ -241,6 +249,7 @@
 				AC051716174B6BFD0095C6D8 /* Default@2x.png in Resources */,
 				AC051718174B6BFD0095C6D8 /* Default-568h@2x.png in Resources */,
 				AC05171E174B6BFD0095C6D8 /* ViewController.xib in Resources */,
+				AC051743174BB4430095C6D8 /* CustomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +288,7 @@
 				AC051712174B6BFD0095C6D8 /* AppDelegate.m in Sources */,
 				AC05171B174B6BFD0095C6D8 /* ViewController.m in Sources */,
 				AC05173E174BA2AC0095C6D8 /* Corso.m in Sources */,
+				AC051741174BB0820095C6D8 /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

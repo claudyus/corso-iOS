@@ -66,9 +66,9 @@
 }
 
 // Setta il contenuto delle varie celle
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (UITableViewCell *)tableView:(UITableView *)TableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
+    UITableViewCell *cell = [TableView dequeueReusableCellWithIdentifier:@"cellID"];
     
     if (cell == nil){
         cell = [[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"cellID"] ;
