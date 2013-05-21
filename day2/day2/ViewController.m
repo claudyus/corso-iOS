@@ -34,6 +34,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma gestione callback pulsanti
+/* implementazione dell' azione */
+- (IBAction)fetchButton:(id)sender{
+    
+    /* uso del log */
+    NSLog(@"premuto il bottone");
+
+    UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"You should not pass!!" message:@"Error" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+    [alertView show];}
 
 
 #pragma callback della tabella
