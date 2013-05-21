@@ -43,10 +43,10 @@
     UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"You should not pass!!" message:@"La tabella sta per essere popolata!" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
     [alertView show];
 
-    [arrayTable addObject: [[Corso alloc] popolate:@"test" andidCorso:1 anddurata:@"120min"]];
-    [arrayTable addObject: [[Corso alloc] popolate:@"test2" andidCorso:2 anddurata:@"1h"]];
-    [arrayTable addObject: [[Corso alloc] popolate:@"test3" andidCorso:3 anddurata:@"3h"]];
-    [arrayTable addObject: [[Corso alloc] popolate:@"test4" andidCorso:4 anddurata:@"55min"]];
+    [arrayTable addObject: [[Corso alloc] popolate:@"test" andidCorso:1 anddurata:@"120min" andimmagine: [UIImage imageNamed:@"course.gif"] andattivo:YES]];
+    [arrayTable addObject: [[Corso alloc] popolate:@"test2" andidCorso:2 anddurata:@"1h" andimmagine: [UIImage imageNamed:@"course.gif"] andattivo:YES]];
+    [arrayTable addObject: [[Corso alloc] popolate:@"test3" andidCorso:3 anddurata:@"3h" andimmagine: [UIImage imageNamed:@"course.gif"] andattivo:YES]];
+    [arrayTable addObject: [[Corso alloc] popolate:@"test4" andidCorso:4 anddurata:@"55min" andimmagine: [UIImage imageNamed:@"course.gif"] andattivo:YES]];
        
     /*scatena l'evento di ricaricamento dei dati dal source*/
     [tableView reloadData];
