@@ -1,6 +1,11 @@
 # Corso iOS
 
-Proj uploaded by [@claudyus], and thankfully [leeched] by [@mrgamer]
+Proj uploaded by [@claudyus], and thankfully [leeched] by [@mrgamer]  
+
+###### [Introduction to Objective-C][objlolc]
+Picture describing the language:  
+![Picture worth 1000 words](http://qualitycoding.org/jrwp/wp-content/uploads/2012/06/dr-horrible.jpg)
+
 
 <br>
 
@@ -31,3 +36,4 @@ Proj uploaded by [@claudyus], and thankfully [leeched] by [@mrgamer]
   [navigation]: http://developer.apple.com/library/ios/#documentation/WindowsViews/Conceptual/ViewControllerCatalog/Chapters/NavigationControllers.html
   [git]: https://code.google.com/p/git-osx-installer/downloads/list
   [nodejs]: http://nodejs.org/
+  [objlolc]: http://qualitycoding.org/dot-notation/
