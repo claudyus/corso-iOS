@@ -25,6 +25,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    jsonParser = [[SBJsonParser alloc] init];
     arrayTable = [[NSMutableArray alloc] initWithCapacity:0];
 }
 
@@ -117,6 +118,29 @@
     NSString *respData = [[NSString alloc] initWithData:self.recvData encoding:NSUTF8StringEncoding ];
     
     NSLog(@"%@", respData);
+
+    NSMutableArray *arrayCorso = (NSMutableArray *) [jsonParser objectWithData:self.recvData];
+
+    //NSArray *arrayContact = [dictContact objectForKey:@"contacts"];
+
+    [arrayTable removeAllObjects ];
+
+    int i = 0;
+
+    for (NSDictionary *corso in arrayCorso ) {
+
+        Corso *localCorso = [[Corso alloc] init];
+        //cors.idCorso = [corso ];
+        localCorso.titolo = [corso objectForKey:@"titolo"];
+        localCorso.durata = [NSString stringWithFormat:@"%l", [corso objectForKey:@"durata"]];
+
+        localCorso.idCorso = i++;
+
+        [arrayTable addObject: localCorso];
+
+    }
+
+    [tableView reloadData];
 }
 
 @end

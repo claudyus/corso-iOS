@@ -36,7 +36,7 @@ Picture describing the language:
 Su xCode andare su Preferenze -> Downloads
 ![Screenshot](http://i.imgur.com/PvIj5cyl.png)
 
-Installare console tools:
+Installare console tools:  
 ![console tools](http://i.imgur.com/OU05AOEl.png)
 
 **Opzionale** Fixare Git su Mac OSX  

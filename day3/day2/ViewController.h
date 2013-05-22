@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "Corso.h"
 
+#import "SBJson.h"
+
 @interface ViewController : UIViewController
     <NSURLConnectionDelegate, NSURLConnectionDataDelegate> {
         /*conforme al protocollo NSURL per ricevere la delegate*/
@@ -16,6 +18,8 @@
     /* outlet, binding tra elemento grafico e codice */
     IBOutlet UITableView *tableView;
     IBOutlet UIButton *fetchButton;
+
+    SBJsonParser *jsonParser;
     
 }
 
