@@ -62,7 +62,15 @@ Dopodichè installa le librerie:
 $ git clone https://github.com/claudyus/corso-iOS.git
 $ cd corso-iOS/day3
 $ pod install
+Analyzing dependencies
+Downloading dependencies
+Installing SBJson (3.2)
+Generating Pods project
+Integrating client project
+
+[!] From now on use `day2.xcworkspace`.
 ```
+Come dice cocoaPods bisognerà aprire il progetto tramite il file **.xcworkspace**
 
 ### How-To setup REST server
 
