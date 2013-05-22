@@ -27,6 +27,13 @@ Picture describing the language:
       * [JSON decoder framework][json-framework]
     * ~~Split Views for iPad ?~~
 
+**TODO ?!?**  
+  * Webview
+  * DatePicker
+  * Uso Fotocamera
+  * Uso GPS
+  * Uso Mappe
+
 #### Tools
 
   * [Cocoapods][cocoapods], library & dependencies manager
