@@ -27,32 +27,28 @@ Express server listening on port 3000
 <br>
 
   * /list/course
-    * return **XML** list of Courses
+    * return **JSON** list of Courses
 
 Example:
-```xml
-<response>
-    <0>
-        <titolo>test1</titolo>
-        <durata>NaN</durata>
-    </0>
-    <1>
-        <titolo>test1</titolo>
-        <durata>NaN</durata>
-    </1>
-    <2>
-        <titolo>test1</titolo>
-        <durata>NaN</durata>
-    </2>
-    <3>
-        <titolo>test1</titolo>
-        <durata>NaN</durata>
-    </3>
-</response>
+```json
+[
+  {
+    "titolo": "prova",
+    "durata": 100
+  },
+  {
+    "titolo": "Matematica Computazionale",
+    "durata": 9000
+  },
+  {
+    "titolo": "Objective-C Course",
+    "durata": 1800
+  }
+]
 ```
 
 
-### Dependencies
+### ~~Dependencies~~
 
   * [EasyXML github project][easyxml], read the documentation
 
