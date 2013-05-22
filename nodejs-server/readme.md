@@ -2,7 +2,6 @@
 
 Install and start nodejs server
 
-
 ```bash
 $ cd nodejs-server
 $ npm install
@@ -19,7 +18,7 @@ Express server listening on port 3000
 ### Routes
 <br>
 
-  * /add/course 
+  * /add/course?titolo=Some%20Title&durata=120
     * param *titolo*
     * param *durata*
     * return *ID*
@@ -50,6 +49,6 @@ Example:
 
 ### ~~Dependencies~~
 
-  * [EasyXML github project][easyxml], read the documentation
+  * ~~[EasyXML github project][easyxml], read the documentation~~
 
   [easyxml]: https://github.com/QuickenLoans/node-easyxml

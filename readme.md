@@ -14,19 +14,21 @@ Picture describing the language:
   * iOS Applications Basics:
     * NSObjects & friends
     * View editing -> .xib(s)
+    * [Binding Items in view to Outlets Automatically!][automaticoutlets]
     * [Xcode How-To][xcodehowto]
     * [Table View app][tableviewapp]
+    * [Storyboarding][storyboard], semplifica transizioni tra navController
   * iOS Applications Advanced Features:
     * [Multiple views and Navigation Stack][navigation] (Apple Developers)
     * [Customized Table View Cells for UITableView][customizedcells]
     * Data Interaction with REST API
       * [AFNetworking][afnetworking], libreria più comprensiva (XML/JSON)
       * [asi-http-request][asihttp], libreria semplice ma outdated
-    * Split Views for iPad ?
+    * ~~Split Views for iPad ?~~
 
 ### How-To setup REST server
 
-[Read Here][nodejs-server/]
+[Read Here](nodejs-server/)
 
 ### Requirements
 
@@ -49,3 +51,5 @@ Picture describing the language:
   [customizedcells]: http://www.appcoda.com/customize-table-view-cells-for-uitableview/
   [tableviewapp]: http://www.appcoda.com/ios-programming-tutorial-create-a-simple-table-view-app/
   [xcodehowto]: http://www.appcoda.com/hello-world-build-your-first-iphone-app/
+  [storyboard]: http://docs.xamarin.com/guides/ios/user_interface/tables/part_5_-_using_xcode,_interface_builder,_and_storyboards
+  [automaticoutlets]: https://developer.apple.com/technologies/tools/whats-new.html#interface-builder
