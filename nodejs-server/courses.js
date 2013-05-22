@@ -9,6 +9,10 @@ var util = require('util')
   , log = function (args) { console.log(util.inspect(args, { colors: true })); };
 
 var coursesArray = [];
+coursesArray.push({ titolo: 'Matematica Computazionale', durata: 9000 });
+coursesArray.push({ titolo: 'Fisica', durata: 4862 });
+coursesArray.push({ titolo: 'Italiano', durata: 150 });
+coursesArray.push({ titolo: 'Georgiano', durata: 500 });
 
 // col3-style routes
 app.get('/list/course', function (req, res, next) {

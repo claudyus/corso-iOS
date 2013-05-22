@@ -42,7 +42,7 @@ Installare console tools:
 **Opzionale** Fixare Git su Mac OSX  
 Si puo installare l'ultima versione di git tramite [questo link][git], ma se si installa il command line va inserito anche ([Reference](http://stackoverflow.com/a/12608076))
 ```bash
-$ echo 'alias git="/usr/local/git/bin/git"' >> ~/.bashrc
+$ echo 'alias git="/usr/local/git/bin/git"' >> ~/.bash_profile
 ```
 al riavvio del terminale ```git --version``` darà la versione installata da voi.
 
