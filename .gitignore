@@ -3,3 +3,5 @@ npm-debug.log
 # As stackoverflow says
 # http://stackoverflow.com/a/49488
 xcuserdata
+Pods
+*.lock
