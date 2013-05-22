@@ -41,14 +41,9 @@
     /* uso del log */
     NSLog(@"premuto il bottone");
 
-    UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"You should not pass!!" message:@"La tabella sta per essere popolata!" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
-    [alertView show];
-
-    [arrayTable addObject: [[Corso alloc] popolate:@"test" andidCorso:1 anddurata:@"120min" andimmagine: [UIImage imageNamed:@"course.gif"] andattivo:YES]];
-    [arrayTable addObject: [[Corso alloc] popolate:@"test2" andidCorso:2 anddurata:@"1h" andimmagine: [UIImage imageNamed:@"course.gif"] andattivo:YES]];
-    [arrayTable addObject: [[Corso alloc] popolate:@"test3" andidCorso:3 anddurata:@"3h" andimmagine: [UIImage imageNamed:@"course.gif"] andattivo:NO]];
-    [arrayTable addObject: [[Corso alloc] popolate:@"test4" andidCorso:4 anddurata:@"55min" andimmagine: [UIImage imageNamed:@"course.gif"] andattivo:NO]];
-       
+    /* make the real rest call */
+    
+    
     /*scatena l'evento di ricaricamento dei dati dal source*/
     [tableView reloadData];
     
