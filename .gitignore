@@ -1,2 +1,5 @@
 node_modules/
 npm-debug.log
+# As stackoverflow says
+# http://stackoverflow.com/a/49488
+xcuserdata
