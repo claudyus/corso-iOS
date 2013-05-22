@@ -42,10 +42,19 @@
     NSLog(@"premuto il bottone");
 
     /* make the real rest call */
+    NSMutableData *data = [[NSMutableData alloc] init ];
+    self.recvData = data;
     
-    
+    /* configura l'url e avvia la connessione*/
+    NSURL *url = [NSURL URLWithString:@"http://localhost:3000/list/course"];
+    /*vedi la cartella server-nodejs per la configurazione */
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate: self];
+    self.connection = connection;
+    [connection start];
+
     /*scatena l'evento di ricaricamento dei dati dal source*/
-    [tableView reloadData];
+    //il reload andrà spostato -- [tableView reloadData];
     
 }
 
@@ -88,4 +97,26 @@
     /* stampa la linea selezionata*/
     NSLog(@"selezionato %d", indexPath.row);
 }
+
+#pragma callback della chiamata REST
+
+/*delegato chiamato per ogni pacchetto associato alla connessione */
+-(void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    
+    /* riceviamo i dati dal server e lo appendiamo perchè rimontare i pacchetti frammentati */
+    [self.recvData appendData:data];
+}
+
+- (void) connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+    NSLog(@"Errore nella connessione REST: %@", error);
+}
+
+/* delegato chiamato alla chiusura della connessione */
+- (void) connectionDidFinishLoading:(NSURLConnection *)connection  {
+    /* trasforma l'NSData in NSString */
+    NSString *respData = [[NSString alloc] initWithData:self.recvData encoding:NSUTF8StringEncoding ];
+    
+    NSLog(@"%@", respData);
+}
+
 @end
