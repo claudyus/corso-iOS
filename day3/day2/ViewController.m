@@ -18,7 +18,9 @@
 
 /* sintetizziamo il set/get di arrayV per recuperarlo dall'altra view */
 @synthesize arrayTable;
-
+/* sintetizziamo le proprietà della classe h*/
+@synthesize receiveData;
+@synthesize connection;
 
 - (void)viewDidLoad
 {
@@ -53,6 +55,44 @@
     [tableView reloadData];
     
 }
+
+-(IBAction)restCall:(id)sender{
+ 
+    //call to backend
+    NSMutableData *data = [[NSMutableData alloc] init];
+    self.receiveData = data;
+    
+    NSURL *url = [NSURL URLWithString:@"http://api.androidhive.info/contacts/"];
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url]; //requestWithURL è un metodo di classe non va allocato!!
+    
+    NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self ];//initWithRequest è un metodo di istanza e VA allocato. Nelle chiamate il delegato si passa come parametro!!
+
+    self.connection = conn;
+    
+    [conn start];
+}
+
+#pragma callback 
+/* implemento i metodi del delegato NSURLConnectionDataDelegate */
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data{
+    [self.receiveData appendData:data];
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
+    NSLog(@"%@",error);
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection{
+    NSString *htmlSTR = [[NSString alloc] initWithData:self.receiveData encoding:NSUTF8StringEncoding];
+    NSLog(@"oggetto json: %@", htmlSTR);
+    
+   //WebViewController *controller = [[WebViewController alloc] initWithString:htmlSTR];
+    
+}
+
+
 
 
 #pragma callback della tabella

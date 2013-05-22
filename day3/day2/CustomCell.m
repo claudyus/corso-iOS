@@ -27,7 +27,7 @@
 }
 
 + (id) getCell: (Corso*) corso {
-    /* */
+    /* implementzione del metodo getCell dichiarato nell'interfaccia h */
     CustomCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"CustomCell" owner:self options:nil ] objectAtIndex:0];
 
     return cell;
