@@ -13,6 +13,7 @@
     IBOutlet UIWebView *WebView1;
     IBOutlet UIButton *ButtonFb;
     __weak IBOutlet UIButton *ButtonIndietro;
+    __weak IBOutlet UILabel *LabelSwap;
 }
 
 - (IBAction)ButtonFb_Up:(id)sender;

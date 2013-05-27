@@ -8,7 +8,11 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () {
+    /* salvo le informazioni sul frame per ripristinarle QUA */
+    CGRect frameTemp;
+    
+}
 
 @end
 
@@ -30,13 +34,13 @@
     
     /* quando la tastiera viene visualizzata invoca il metodo KeyboardInMezzo */
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(KeyboardInMezzo)
+                                             selector:@selector(KeyboardInMezzoA)
                                              name: UIKeyboardDidShowNotification
-                                             object: true];
+                                               object: nil];
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(KeyboardInMezzo)
+                                             selector:@selector(KeyboardInMezzoB)
                                                  name: UIKeyboardDidHideNotification
-                                               object: false];
+                                               object: nil];
     
 }
 
@@ -60,11 +64,8 @@
     [WebView1 goBack];
 }
 
-- (void) KeyboardInMexxo:(Boolean) action_type {
 
-    
-    
-}
+
 
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACEA8DDF17537A8E00AD33C3 /* KeyBoardInMezzo.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEA8DDE17537A8E00AD33C3 /* KeyBoardInMezzo.m */; };
 		DCBA247F1753559C0069547B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBA247E1753559C0069547B /* UIKit.framework */; };
 		DCBA24811753559C0069547B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBA24801753559C0069547B /* Foundation.framework */; };
 		DCBA24831753559C0069547B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBA24821753559C0069547B /* CoreGraphics.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ACEA8DDD17537A8E00AD33C3 /* KeyBoardInMezzo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyBoardInMezzo.h; sourceTree = "<group>"; };
+		ACEA8DDE17537A8E00AD33C3 /* KeyBoardInMezzo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyBoardInMezzo.m; sourceTree = "<group>"; };
 		DCBA247B1753559C0069547B /* day4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = day4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCBA247E1753559C0069547B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DCBA24801753559C0069547B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -123,6 +126,8 @@
 				DCBA248E1753559C0069547B /* AppDelegate.m */,
 				DCBA24961753559C0069547B /* ViewController.h */,
 				DCBA24971753559C0069547B /* ViewController.m */,
+				ACEA8DDD17537A8E00AD33C3 /* KeyBoardInMezzo.h */,
+				ACEA8DDE17537A8E00AD33C3 /* KeyBoardInMezzo.m */,
 				DCBA24991753559C0069547B /* ViewController_iPhone.xib */,
 				DCBA249C1753559C0069547B /* ViewController_iPad.xib */,
 				DCBA24851753559C0069547B /* Supporting Files */,
@@ -276,6 +281,7 @@
 				DCBA248B1753559C0069547B /* main.m in Sources */,
 				DCBA248F1753559C0069547B /* AppDelegate.m in Sources */,
 				DCBA24981753559C0069547B /* ViewController.m in Sources */,
+				ACEA8DDF17537A8E00AD33C3 /* KeyBoardInMezzo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +472,7 @@
 				DCBA24B81753559C0069547B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCBA24B91753559C0069547B /* Build configuration list for PBXNativeTarget "day4Tests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +481,7 @@
 				DCBA24BB1753559C0069547B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
