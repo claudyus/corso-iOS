@@ -2,13 +2,13 @@
 //  AppDelegate.m
 //  day4
 //
-//  Created by sviluppatore1 on 27/05/13.
-//  Copyright (c) 2013 sviluppatore1. All rights reserved.
+//  Created by sviluppatore2 on 27/05/13.
+//
 //
 
 #import "AppDelegate.h"
 
-#import "MasterViewController.h"
+#import "ViewController.h"
 
 @implementation AppDelegate
 
@@ -16,10 +16,12 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-
-    MasterViewController *masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController" bundle:nil];
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
-    self.window.rootViewController = self.navigationController;
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPhone" bundle:nil];
+    } else {
+        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil];
+    }
+    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
