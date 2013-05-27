@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "KeyboardInMezzo.h"
 
 @interface ViewController () {
     /* salvo le informazioni sul frame per ripristinarle QUA */
@@ -26,11 +27,11 @@
     NSString *urlAddress = @"http://www.google.com";
     //Create a URL object.
     NSURL *url = [NSURL URLWithString:urlAddress];
-    //URL Requst Object
+   
+    //URL Request Object
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     //Load the request in the UIWebView.
     [WebView1 loadRequest:requestObj];
-
     
     /* quando la tastiera viene visualizzata invoca il metodo KeyboardInMezzo */
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -50,22 +51,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-- (IBAction)ButtonFb_Up:(id)sender {
-    /* carica FB home*/
-    
-    NSString *urlAddress = @"http://www.facebook.com";
-    NSURL *url = [NSURL URLWithString:urlAddress];
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    [WebView1 loadRequest:requestObj];
+- (IBAction)ButtonFB:(id)sender {
+    [WebView1 loadRequest: [NSURLRequest requestWithURL: [NSURL URLWithString: @"http://www.facebook.com"]]];
 }
 
 - (IBAction)ButtonIndietro:(id)sender {
     [WebView1 goBack];
 }
-
-
-
-
 
 @end

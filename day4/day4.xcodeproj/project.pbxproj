@@ -25,6 +25,7 @@
 		DCBA24A81753559C0069547B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBA24801753559C0069547B /* Foundation.framework */; };
 		DCBA24B01753559C0069547B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCBA24AE1753559C0069547B /* InfoPlist.strings */; };
 		DCBA24B31753559C0069547B /* day4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBA24B21753559C0069547B /* day4Tests.m */; };
+		DCBA24BE17537A910069547B /* KeyboardInMezzo.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBA24BD17537A910069547B /* KeyboardInMezzo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		DCBA24AF1753559C0069547B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DCBA24B11753559C0069547B /* day4Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = day4Tests.h; sourceTree = "<group>"; };
 		DCBA24B21753559C0069547B /* day4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = day4Tests.m; sourceTree = "<group>"; };
+		DCBA24BC17537A910069547B /* KeyboardInMezzo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardInMezzo.h; sourceTree = "<group>"; };
+		DCBA24BD17537A910069547B /* KeyboardInMezzo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardInMezzo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 				DCBA24991753559C0069547B /* ViewController_iPhone.xib */,
 				DCBA249C1753559C0069547B /* ViewController_iPad.xib */,
 				DCBA24851753559C0069547B /* Supporting Files */,
+				DCBA24BC17537A910069547B /* KeyboardInMezzo.h */,
+				DCBA24BD17537A910069547B /* KeyboardInMezzo.m */,
 			);
 			path = day4;
 			sourceTree = "<group>";
@@ -281,7 +286,7 @@
 				DCBA248B1753559C0069547B /* main.m in Sources */,
 				DCBA248F1753559C0069547B /* AppDelegate.m in Sources */,
 				DCBA24981753559C0069547B /* ViewController.m in Sources */,
-				ACEA8DDF17537A8E00AD33C3 /* KeyBoardInMezzo.m in Sources */,
+				DCBA24BE17537A910069547B /* KeyboardInMezzo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
