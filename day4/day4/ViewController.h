@@ -12,6 +12,10 @@
 @interface ViewController : UIViewController {
     IBOutlet UIWebView *WebView1;
     IBOutlet UIButton *ButtonFb;
+    __weak IBOutlet UIButton *ButtonIndietro;
 }
+
+- (IBAction)ButtonFb_Up:(id)sender;
+- (IBAction)ButtonIndietro:(id)sender;
 
 @end

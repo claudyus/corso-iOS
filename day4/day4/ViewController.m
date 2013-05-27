@@ -39,6 +39,16 @@
 }
 
 
+- (IBAction)ButtonFb_Up:(id)sender {
+    /* carica FB home*/
+    
+    NSString *urlAddress = @"http://www.facebook.com";
+    NSURL *url = [NSURL URLWithString:urlAddress];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    [WebView1 loadRequest:requestObj];
+}
 
-
+- (IBAction)ButtonIndietro:(id)sender {
+    [WebView1 goBack];
+}
 @end
