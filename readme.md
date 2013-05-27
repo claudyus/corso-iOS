@@ -30,6 +30,7 @@ Picture describing the language:
     * Animazioni UI
     * WebView
     * Protocollo Custom
+    * Mappe
 
 ###### Cose fatte in modo temporale
 
@@ -39,6 +40,7 @@ Picture describing the language:
   * [Objective-C **TRUE** Basics][objectivecTRUE]
   * Animazioni UI
   * Protocollo Custom
+  * Mappe
 
 **TODO ?!?**  
   * DatePicker
