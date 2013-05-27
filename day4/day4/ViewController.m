@@ -20,16 +20,24 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     NSString *urlAddress = @"http://www.google.com";
-    
     //Create a URL object.
     NSURL *url = [NSURL URLWithString:urlAddress];
-    
     //URL Requst Object
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    
     //Load the request in the UIWebView.
     [WebView1 loadRequest:requestObj];
 
+    
+    /* quando la tastiera viene visualizzata invoca il metodo KeyboardInMezzo */
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(KeyboardInMezzo)
+                                             name: UIKeyboardDidShowNotification
+                                             object: true];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(KeyboardInMezzo)
+                                                 name: UIKeyboardDidHideNotification
+                                               object: false];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,4 +59,12 @@
 - (IBAction)ButtonIndietro:(id)sender {
     [WebView1 goBack];
 }
+
+- (void) KeyboardInMexxo:(Boolean) action_type {
+
+    
+    
+}
+
+
 @end
