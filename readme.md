@@ -31,6 +31,7 @@ Picture describing the language:
     * WebView
     * Protocollo Custom
     * Mappe
+    * [Uso GPS][gpstutorial]
 
 ###### Cose fatte in modo temporale
 
@@ -42,10 +43,12 @@ Picture describing the language:
   * Protocollo Custom
   * Mappe
 
-**TODO ?!?**  
-  * DatePicker
-  * Uso Fotocamera
+* Day 5
   * Uso GPS
+
+**TODO ?!?**  
+  * DatePicker ?!?
+  * Uso Fotocamera
   * Uso Mappe
 
 #### Tools
@@ -124,3 +127,4 @@ Come dice cocoaPods bisognerà aprire il progetto tramite il file **.xcworkspace
   [json-framework]: https://github.com/stig/json-framework
   [cocoapods]: http://cocoapods.org/
   [objectivecTRUE]: http://www.slideshare.net/pohjus/introduction-to-objective-c-20?from_search=2  
+  [gpstutorial]: http://www.appcoda.com/how-to-get-current-location-iphone-user/
