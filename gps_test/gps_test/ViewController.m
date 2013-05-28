@@ -21,7 +21,8 @@ GeoLocator * locate;
     [super viewDidLoad];
 
     locate = [GeoLocator getInstance];
-    [locate startLocatingWithDistanceFilter:10];
+    locate.delegate = self;
+    [locate startLocating];
     
 
 }
@@ -32,11 +33,16 @@ GeoLocator * locate;
     // Dispose of any resources that can be recreated.
 }
 
+#pragma metodi delegati
+     
 - (void) locator:(GeoLocator *)locator didReceiveLocation:(CLLocation *)location {
     
     textLat.text = [[NSString alloc] initWithFormat:@"%f", location.coordinate.latitude ];
     textLon.text = [[NSString alloc] initWithFormat:@"%f", location.coordinate.longitude ];
     
-    
+}
+
+-(void) locator:(GeoLocator *)locator didFailWithError:(NSError *)error {
+    //do nothink
 }
 @end
