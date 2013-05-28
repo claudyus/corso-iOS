@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GeoLocation.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <GeoLocatorDelegate>
+
+@property (weak, nonatomic) IBOutlet UILabel *textLat;
+@property (weak, nonatomic) IBOutlet UILabel *textLon;
+@property (weak, nonatomic) IBOutlet UILabel *textAddress;
 
 @end

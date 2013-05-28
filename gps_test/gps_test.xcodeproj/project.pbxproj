@@ -23,6 +23,7 @@
 		AC4D2BEB1754BEAF004F4AE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC4D2BC61754BEAE004F4AE2 /* Foundation.framework */; };
 		AC4D2BF31754BEAF004F4AE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC4D2BF11754BEAF004F4AE2 /* InfoPlist.strings */; };
 		AC4D2BF61754BEAF004F4AE2 /* gps_testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4D2BF51754BEAF004F4AE2 /* gps_testTests.m */; };
+		AC4D2C021754BF70004F4AE2 /* GeoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4D2C011754BF70004F4AE2 /* GeoLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		AC4D2BF21754BEAF004F4AE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AC4D2BF41754BEAF004F4AE2 /* gps_testTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gps_testTests.h; sourceTree = "<group>"; };
 		AC4D2BF51754BEAF004F4AE2 /* gps_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gps_testTests.m; sourceTree = "<group>"; };
+		AC4D2C001754BF64004F4AE2 /* GeoLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoLocation.h; sourceTree = "<group>"; };
+		AC4D2C011754BF70004F4AE2 /* GeoLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoLocation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,7 @@
 		AC4D2BCA1754BEAE004F4AE2 /* gps_test */ = {
 			isa = PBXGroup;
 			children = (
+				AC4D2BFF1754BEEC004F4AE2 /* GeoLocation */,
 				AC4D2BD31754BEAE004F4AE2 /* AppDelegate.h */,
 				AC4D2BD41754BEAE004F4AE2 /* AppDelegate.m */,
 				AC4D2BDC1754BEAE004F4AE2 /* ViewController.h */,
@@ -158,6 +162,15 @@
 				AC4D2BF11754BEAF004F4AE2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC4D2BFF1754BEEC004F4AE2 /* GeoLocation */ = {
+			isa = PBXGroup;
+			children = (
+				AC4D2C011754BF70004F4AE2 /* GeoLocation.m */,
+				AC4D2C001754BF64004F4AE2 /* GeoLocation.h */,
+			);
+			name = GeoLocation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +286,7 @@
 				AC4D2BD11754BEAE004F4AE2 /* main.m in Sources */,
 				AC4D2BD51754BEAE004F4AE2 /* AppDelegate.m in Sources */,
 				AC4D2BDE1754BEAE004F4AE2 /* ViewController.m in Sources */,
+				AC4D2C021754BF70004F4AE2 /* GeoLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
