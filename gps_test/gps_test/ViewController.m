@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+GeoLocator * locate;
+
 @interface ViewController ()
 
 @end
@@ -17,7 +19,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    locate = [GeoLocator getInstance];
+    [locate startLocatingWithDistanceFilter:10];
+    
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +32,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) locator:(GeoLocator *)locator didReceiveLocation:(CLLocation *)location {
+    
+    textLat.text = [[NSString alloc] initWithFormat:@"%f", location.coordinate.latitude ];
+    textLon.text = [[NSString alloc] initWithFormat:@"%f", location.coordinate.longitude ];
+    
+    
+}
 @end
