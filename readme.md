@@ -11,6 +11,7 @@ Picture describing the language:
 #### Things done
 
   * [Objective-C basics][objectivec] (Apple Developers)
+  * [Objective-C **TRUE** Basics][objectivecTRUE]
   * iOS Applications Basics:
     * NSObjects & friends
     * View editing -> .xib(s)
@@ -26,9 +27,22 @@ Picture describing the language:
       * [asi-http-request][asihttp], libreria semplice ma outdated
       * [JSON decoder framework][json-framework]
     * ~~Split Views for iPad ?~~
+    * Animazioni UI
+    * WebView
+    * Protocollo Custom
+    * Mappe
+
+###### Cose fatte in modo temporale
+
+* Day 4
+  * Slide lezioni 10
+  * WebView
+  * [Objective-C **TRUE** Basics][objectivecTRUE]
+  * Animazioni UI
+  * Protocollo Custom
+  * Mappe
 
 **TODO ?!?**  
-  * Webview
   * DatePicker
   * Uso Fotocamera
   * Uso GPS
@@ -109,3 +123,4 @@ Come dice cocoaPods bisognerà aprire il progetto tramite il file **.xcworkspace
   [automaticoutlets]: https://developer.apple.com/technologies/tools/whats-new.html#interface-builder
   [json-framework]: https://github.com/stig/json-framework
   [cocoapods]: http://cocoapods.org/
+  [objectivecTRUE]: http://www.slideshare.net/pohjus/introduction-to-objective-c-20?from_search=2  
