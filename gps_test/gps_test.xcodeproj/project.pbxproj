@@ -24,6 +24,7 @@
 		AC4D2BF31754BEAF004F4AE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC4D2BF11754BEAF004F4AE2 /* InfoPlist.strings */; };
 		AC4D2BF61754BEAF004F4AE2 /* gps_testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4D2BF51754BEAF004F4AE2 /* gps_testTests.m */; };
 		AC4D2C021754BF70004F4AE2 /* GeoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4D2C011754BF70004F4AE2 /* GeoLocation.m */; };
+		AC4D2C041754C536004F4AE2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC4D2C031754C536004F4AE2 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		AC4D2BF51754BEAF004F4AE2 /* gps_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gps_testTests.m; sourceTree = "<group>"; };
 		AC4D2C001754BF64004F4AE2 /* GeoLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoLocation.h; sourceTree = "<group>"; };
 		AC4D2C011754BF70004F4AE2 /* GeoLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoLocation.m; sourceTree = "<group>"; };
+		AC4D2C031754C536004F4AE2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC4D2C041754C536004F4AE2 /* CoreLocation.framework in Frameworks */,
 				AC4D2BC51754BEAE004F4AE2 /* UIKit.framework in Frameworks */,
 				AC4D2BC71754BEAE004F4AE2 /* Foundation.framework in Frameworks */,
 				AC4D2BC91754BEAE004F4AE2 /* CoreGraphics.framework in Frameworks */,
@@ -90,6 +93,7 @@
 		AC4D2BB81754BEAE004F4AE2 = {
 			isa = PBXGroup;
 			children = (
+				AC4D2C031754C536004F4AE2 /* CoreLocation.framework */,
 				AC4D2BCA1754BEAE004F4AE2 /* gps_test */,
 				AC4D2BEE1754BEAF004F4AE2 /* gps_testTests */,
 				AC4D2BC31754BEAE004F4AE2 /* Frameworks */,
